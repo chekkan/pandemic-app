@@ -12,9 +12,7 @@ function TotalStats() {
       let res = await fetch(url);
       return await res.json();
     }
-    return run(
-      "http://pande-apise-12acxj9ysan3b-1731230261.eu-west-1.elb.amazonaws.com/v1/stats"
-    );
+    return run("https://pandemic-api.azurewebsites.net/v1/stats");
   });
   return (
     <div>
