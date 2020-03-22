@@ -43,9 +43,15 @@ function CountriesList() {
                   <TableCell component="th" scope="row">
                     {country.name}
                   </TableCell>
-                  <TableCell align="right">{country.total_confirmed}</TableCell>
-                  <TableCell align="right">{country.total_death}</TableCell>
-                  <TableCell align="right">{country.total_recovered}</TableCell>
+                  <TableCell align="right">
+                    {country.confirmed.toLocaleString()}
+                  </TableCell>
+                  <TableCell align="right">
+                    {country.deaths.toLocaleString()}
+                  </TableCell>
+                  <TableCell align="right">
+                    {country.recovered.toLocaleString()}
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
