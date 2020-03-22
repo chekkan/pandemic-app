@@ -16,7 +16,7 @@ function CountriesList() {
       return await res.json();
     }
     return run(
-      "https://localhost:5001/countries?_sort=total_confirmed&_order=desc"
+      "http://pande-apise-12acxj9ysan3b-1731230261.eu-west-1.elb.amazonaws.com/v1/countries?_sort=total_confirmed&_order=desc"
     );
   });
 
